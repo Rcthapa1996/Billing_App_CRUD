@@ -1,0 +1,4 @@
+const DDMMYYYY = "DD-MM-YYYY";
+const DDMMMMYYYY = "DD MMMM YYYY";
+
+export { DDMMYYYY, DDMMMMYYYY };

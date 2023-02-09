@@ -1,0 +1,118 @@
+.container {
+  // display: flex;
+  border:1px solid blue;
+  margin:20px 10px;
+  padding:30px;
+}
+
+.AddAccount {
+  height:80vh;
+  border:1px solid blue;
+  margin:20px 10px;
+  padding:20px 10px;
+  overflow: scroll;
+
+
+  .NewAccount {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height: max-content;
+    // background-color:green;
+    .newAccBtn, .transactionBtn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      border-radius: 15px;
+      margin:10px
+    }
+    .newAccBtn {
+      color: #fff;
+      box-shadow: 5px 5px rgb(206, 200, 200);
+      background-color: #4CAF50;
+    }
+    .transactionBtn {
+      color: #fff;
+      box-shadow: 5px 5px rgb(194, 177, 177);
+      background-color: rgb(31, 32, 138);
+
+    }
+    
+    .newAccBtn:hover {background-color: #3e8e41}
+    .transactionBtn:hover {background-color: #18227a}
+    
+    .newAccBtn:active, .transactionBtn:active {
+      background-color: #2f6932;
+      box-shadow: 3px 3px #666;
+      transform: translateY(4px);
+    }
+    .newAccBtn:active {
+      background-color: #2f6932;
+    }
+    .transactionBtn:active {
+      background-color: #160963;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid blue;
+    margin:20px 10px; 
+    
+    label {  
+      display: flex;
+      width:300px;
+      align-items:center;
+
+      div {
+        justify-content: flex-start;
+        flex:1;
+      }
+
+      select, input,option {
+        box-shadow:2px 2px 4px #000000;
+        flex:1;
+        margin: 10px;
+        padding: 0px 10px;
+      }
+
+      .calender {
+        &:nth-child(2){
+          width: 800px;
+
+        }
+      }
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 5px 5px #999;
+      margin:10px
+    }
+    
+    .button:hover {background-color: #3e8e41}
+    
+    .button:active {
+      background-color: #2f6932;
+      box-shadow: 3px 3px #666;
+      transform: translateY(4px);
+    }
+  }
+
+}

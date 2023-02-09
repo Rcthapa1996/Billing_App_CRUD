@@ -1,0 +1,42 @@
+table {
+  font-family: "Fraunces", serif;
+  // width: calc(100%);
+  border-collapse: separate;
+  // border-spacing: 0;
+
+  thead {
+    th {
+      background-color: #999;
+    }
+    th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+  }
+
+  tbody {
+    background-color: #AAA;
+    tr {
+      white-space: nowrap;
+      td {
+        background: #DDD ;
+        &:first-child {
+          position: sticky;
+          left: 0;
+          z-index: 2;
+        }
+      }
+      &:nth-child(odd){
+        td {
+          background: #EEE ;
+        }
+      }
+      &:hover {
+        td {
+        background: #CCC;
+        }
+      }
+    }
+  }
+}
